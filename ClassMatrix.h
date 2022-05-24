@@ -47,12 +47,6 @@ public:
 			}
 		}
 	}
-	~classMatrix() {
-		for (int i = 0; i < ArrSize_x; i++) {
-			delete[] ArrM[i];
-		}
-		delete[] ArrM;
-	}
 
 	//Перегрузки операторов
 	auto operator[](const int index) {
